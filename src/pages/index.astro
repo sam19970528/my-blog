@@ -1,0 +1,49 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header title={SITE_TITLE} />
+        <main>
+            <h1>Hello, I'm Sam</h1>
+            <h2>我的作品專案</h2>
+            <div class="flex">
+                <div class="img-border">
+                    <img src="/placeholder-social.jpg" alt="" />
+                </div>
+                <ul>
+                    <li>xxxx</li>
+                </ul>
+            </div>
+        </main>
+        <Footer />
+        <style>
+            .flex {
+                display: flex;
+            }
+            img {
+                height: 100%;
+            }
+            .img-border {
+                width: 314px;
+                border: 7px solid #fff;
+                box-shadow: var(--shadow-lg);
+                margin-right: 50px;
+            }
+            @media only screen and (max-width: 568px) {
+                .img-border {
+                    width: 175px;
+                    margin-right: 0;
+                }
+            }
+        </style>
+    </body>
+</html>
