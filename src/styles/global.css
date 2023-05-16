@@ -10,6 +10,7 @@
         0px 7px 7px rgba(9, 11, 17, 0.05), 0px 2px 4px rgba(9, 11, 17, 0.06);
     --shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01), 0px 35px 21px rgba(9, 11, 17, 0.05),
         0px 16px 16px rgba(9, 11, 17, 0.1), 0px 4px 9px rgba(9, 11, 17, 0.12);
+    --bg-color: #dddddd;
 }
 html {
     height: 100%;
@@ -18,15 +19,12 @@ body {
     font-family: Verdana, sans-serif;
     margin: auto;
     padding: 20px;
-    max-width: 65ch;
     text-align: left;
-    background-color: #ececec;
+    background-color: #f0efeb;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
     color: #444;
-    background-image: url(/background2.avif);
-    background-size: contain;
 }
 h1,
 h2,

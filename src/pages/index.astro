@@ -15,17 +15,75 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         <main>
             <h1>Hello, I'm Sam</h1>
             <h2>我的作品專案</h2>
-            <div class="flex">
-                <div class="img-border">
-                    <img src="/placeholder-social.jpg" alt="" />
+            <div class="item">
+                <h3>活動系統前台</h3>
+                <div class="flex">
+                    <div class="img-border">
+                        <img src="/active_front.jpg" alt="" />
+                    </div>
+                    <div class="list-block">
+                        <p>使用技術:</p>
+                        <ul>
+                            <li>框架: Vue3</li>
+                            <li>構建工具: Vite</li>
+                            <li>程式語言: TypeScript</li>
+                            <li>狀態管理工具: Pinia</li>
+                            <li>API請求工具: Axios</li>
+                            <li>CSS框架: Bootstrap 5</li>
+                            <li>函式庫: lodash</li>
+                            <li>自動導入Vue API: unplugin-auto-import</li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li>xxxx</li>
-                </ul>
+            </div>
+            <div class="item">
+                <h3>活動系統後台</h3>
+                <div class="flex">
+                    <div class="img-border">
+                        <img src="/active_admin.jpg" alt="" />
+                    </div>
+                    <div class="list-block">
+                        <p>使用技術:</p>
+                        <ul>
+                            <li>框架: Vue3</li>
+                            <li>UI框架: Arco-Design</li>
+                            <li>構建工具: Vite</li>
+                            <li>程式語言: TypeScript</li>
+                            <li>狀態管理工具: Pinia</li>
+                            <li>API請求工具: Axios</li>
+                            <li>函式庫: lodash</li>
+                            <li>自動導入Vue API: unplugin-auto-import</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <h3>第三方支付系統</h3>
+                <div class="flex">
+                    <div class="img-border">
+                        <img src="/ddb.jpg" alt="" />
+                    </div>
+                    <div class="list-block">
+                        <p>使用技術:</p>
+                        <ul>
+                            <li>框架: Vue3</li>
+                            <li>構建工具: Vite</li>
+                            <li>程式語言: JavaScript</li>
+                            <li>API請求工具: Axios</li>
+                            <li>CSS框架: Bootstrap 5</li>
+                            <li>消息代理: stompjs</li>
+                            <li>多國語言: vue-i18n</li>
+                            <li>函式庫: lodash</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </main>
         <Footer />
         <style>
+            body {
+                max-width: 1200px;
+            }
             .flex {
                 display: flex;
             }
@@ -33,16 +91,46 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 height: 100%;
             }
             .img-border {
-                width: 314px;
+                width: 614px;
                 border: 7px solid #fff;
                 box-shadow: var(--shadow-lg);
                 margin-right: 50px;
             }
             @media only screen and (max-width: 568px) {
+                body {
+                    padding: 15px;
+                }
+                .flex {
+                    flex-wrap: wrap;
+                }
                 .img-border {
-                    width: 175px;
+                    width: 100%;
                     margin-right: 0;
                 }
+                .list-block {
+                    margin-top: 30px;
+                }
+                .list-block ul li {
+                    font-size: 14px;
+                }
+            }
+            .item {
+                margin-bottom: 60px;
+            }
+            .item h3 {
+                color: cornflowerblue;
+            }
+            .text-center {
+                text-align: center;
+            }
+            .list-block {
+                padding-left: 20px;
+            }
+            .list-block p {
+                margin: 0;
+            }
+            .list-block ul {
+                margin-top: 5px;
             }
         </style>
     </body>

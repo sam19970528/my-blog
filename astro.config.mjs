@@ -6,4 +6,8 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
     site: "https://samwangblog.netlify.app",
     integrations: [mdx(), sitemap()],
+    trailingSlash: "never",
+    server: {
+        port: 1666,
+    },
 });
