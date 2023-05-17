@@ -9,5 +9,6 @@ export default defineConfig({
     trailingSlash: "never",
     server: {
         port: 1666,
+        host: true,
     },
 });
