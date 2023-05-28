@@ -16,6 +16,28 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             <h1>Hello, I'm Sam</h1>
             <h2>我的作品專案</h2>
             <div class="item">
+                <h3>多國語言翻譯網</h3>
+                <div class="flex">
+                    <div class="img-border">
+                        <img src="/openai.jpg" alt="" />
+                    </div>
+                    <div class="list-block">
+                        <p>使用技術:</p>
+                        <ul>
+                            <li>框架: Vue3</li>
+                            <li>構建工具: Vite</li>
+                            <li>程式語言: TypeScript</li>
+                            <li>串接Open AI 聊天機器人</li>
+                            <li>API請求工具: Axios</li>
+                            <li>UI框架: Naive UI</li>
+                            <li>函式庫: lodash</li>
+                            <li>自動導入Vue API: unplugin-auto-import</li>
+                        </ul>
+                        <a target="_blank" href="https://openai-i18n.netlify.app/">作品連結</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
                 <h3>活動系統前台</h3>
                 <div class="flex">
                     <div class="img-border">
@@ -141,6 +163,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                     height: 250px;
                 }
                 .img-border img {
+                    width: 100%;
                     object-fit: contain;
                 }
                 .list-block {
